@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Sobre mí | Paulina Quiceno" description="Sobre Paulina Quiceno">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Sobre mí"
+				tagline="Gracias por pararte a leer mi informacion. Lee a continuacion para concer mas sobre mi trabajo."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/Perfil.jpeg"
+					alt="Paulina"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Cuál es su objetivo de marca personal o propuesta de valor.</h2>
+				<div class="content">
+					<p>
+						
+Mi objetivo de marca personal es ser reconocida como una profesional altamente competente y confiable en mi campo, con un enfoque en la excelencia, la innovación y el compromiso con la mejora continua. Mi propuesta de valor radica en mi capacidad para ofrecer soluciones efectivas y creativas a los desafíos que enfrento, aprovechando mis habilidades en idiomas, mi perseverancia, mi adaptabilidad y mi capacidad para superar obstáculos. Aspiro a ser vista como alguien que aporta un valor significativo a cualquier equipo o proyecto en el que participe, y que es capaz de inspirar a otros con mi ética de trabajo, mi actitud positiva y mi enfoque orientado a resultados. En resumen, mi objetivo es construir una marca personal que refleje mi profesionalismo, mi pasión por el aprendizaje y mi compromiso con la excelencia en todo lo que hago.
+					</p>
+				</div>
+				<h2 class="section-title">Conozca mi reputación actual</h2>	
+				<div class="content">
+					<p>
+						se me conoce como una persona responsable y también muy directa, una persona que enfoca mucho sus responsabilidades y que es muy cumplida a la hora de hacer las cosas
+extrovertida, responsable , perfeccionista , atenta
+					</p>
+				</div>
+				<h2 class="section-title">Mira mi mapa de sueños</h2>	
+				<div class="content">
+					<a href="/public/assets/dreams.jpeg" download>Mira mi mapa de sueños</a>
+				</div>
+				<h2 class="section-title">Mas en mi H.V</h2>	
+				<div class="content">
+					<a href="/public/assets/H_V.docx" download>Descargar Hoja De Vida</a>
+				</div>
+				
+					
+				
+			</section>
+			
+			
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

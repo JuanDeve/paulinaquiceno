@@ -16,7 +16,7 @@ tags:
 ##### Explicación:
 
 ##### Tipografía:
-Para el logotipo y el eslogan, se utilizará una tipografía moderna y legible, con líneas limpias y un estilo contemporáneo que refleje profesionalismo y sofisticación. Se puede optar por una tipografía sans-serif para mantener un aspecto limpio y moderno.
+Para el logotipo y el eslogan, se utilizará una tipografía moderna y legible, con líneas limpias y un estilo contemporáneo que refleje profesionalismo y sofisticación.
   
 
 
@@ -36,7 +36,7 @@ El blanco es considerado el color de la pureza y la inocencia. Sugiere integrida
 El blanco es un color simple y minimalista. Representa la simplicidad y la claridad de ideas, lo que puede comunicar eficazmente la esencia y los valores fundamentales de mi marca personal.
 
 
-### Defina 2 públicos objetivos a los cuales desea llegar con su marca elabore el perfil demográfico y psicográfico de cada uno
+### 2 objetivos a los que me gustaria llegar
 
 ##### Profesionales jóvenes en el campo de la tecnología:
 
